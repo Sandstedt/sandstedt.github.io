@@ -15,7 +15,7 @@ html, body {
 h1 {
 	font-weight: 300;
 	text-align: center;
-	padding: 1em;
+	margin: 0.5em 1em 1em;
 }
 
 /* L A Y O U T */
@@ -26,4 +26,10 @@ header {
 	display: flex;
   	align-items: center;
   	justify-content: center;
+    padding-bottom: 1em;
+    flex-direction: column;
+}
+
+.logo {
+    width: 6em;
 }
