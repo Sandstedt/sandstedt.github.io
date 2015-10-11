@@ -1,0 +1,73 @@
+html, body {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	background: #c16c6c;
+	color: #fff;
+	height: 100%;
+	text-align: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/* T Y P O G R A P H Y */
+
+h1, h2 {
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+h1 {
+	font-weight: 300;
+	margin: 1em 1em 0;
+}
+h2 {
+	font-size: 1em;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+	padding: 0.1em 0 0.2em;
+	margin: 0;
+	position: relative;
+	display: block;
+}
+a:before {
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	display: block;
+	position: absolute;
+	top: 0;
+	transition: transform 0.7s cubic-bezier(0,.28,.25,1.92);
+}
+a:after {
+	content: "";
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	transition: transform 0.7s cubic-bezier(0,.28,.25,1.92);
+}
+a:hover:before {
+	transform: translateX(0.2em);
+}
+a:hover:after {
+	transform: translateX(-0.2em);
+}
+
+/* L A Y O U T */
+
+header {
+	height: 100%;
+	height: 100vh;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	flex-direction: column;
+  	padding-bottom: 2em;
+}
